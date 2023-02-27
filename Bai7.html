@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+<!--phí thuê bao bắt buộc là 25k nghìn-->
+<!--600 đồng cho 50 phút đầu-->
+<!--400 đồng cho 150 phút tiếp theo = (so phut - 50)*400+50*600-->
+<!--200 đồng cho cho bất kì cuộc gọi nào sau 200 phút đầu = (so phut - 200) * 200 + 150 * 400 + 50 * 600-->
+</body>
+<script>
+  let sophutgoihangthang = parseInt(prompt('Nhap so phut da goi hang thang'));
+  let phi = 0;
+  let phicodinh = 25000;
+  // alert('phí cố định: ' + sophutgoihangthang + ' Phút')
+  if(sophutgoihangthang > 200){
+    phi = (sophutgoihangthang - 200) * 200 + 150 * 400 + 50 * 600;
+    alert(phi)
+  } else if (sophutgoihangthang > 50){
+    phi = (sophutgoihangthang - 50) * 400 + 50 * 600;
+    alert(phi)
+  }else {
+    phi = sophutgoihangthang * 600
+    alert(phi)
+  }
+  let tongcong = phi + phicodinh
+  alert('bạn đã gọi: '+ sophutgoihangthang + ' phút và số tiền cần phải đóng là: ' + tongcong);
+</script>
+</html>

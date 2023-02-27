@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+<span>hoa hong = 10% tong doanh so</span>
+<span></span>
+<input type="number" id="number" value="doanhso"/> <br>
+<input type="button" onclick="tinhtoan();" value="buttonn"/> <br>
+<p id="ketqua">hoa hong cua ban</p>
+<script>
+    function tinhtoan(){
+        let a = document.getElementById('number').value;
+        let b = 10 * a / 100
+        document.getElementById('ketqua').innerHTML = 'hoa hong cua ban ' + b;
+    }
+</script>
+</body>
+</html>

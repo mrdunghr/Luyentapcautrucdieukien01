@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập A', ''));
+    let b = parseInt(prompt('Nhập B', ''));
+    if (c = a % b == 0){
+        alert('Chia Hết');
+    }else {
+        alert('Không chia hết');
+    }
+
+    let agee = parseInt(prompt('Nhập tuổi', ''));
+    if (agee < 14){
+        alert(agee + ' Tuổi không học được lớp 10');
+    }else {
+        alert(agee + ' được học lớp 10');
+    }
+
+    let numbera = parseInt(prompt('Nhập Số thứ nhất', ''));
+    let numberb = parseInt(prompt('Nhập Số thứ hai', ''));
+    let numberc = parseInt(prompt('Nhập Số thứ ba', ''));
+    if (numbera > numberb || numbera > numberc){
+        alert(numbera + ' số thử NHẤT là số lớn nhất')
+    } else if (numberb > numbera || numberb > numberc){
+        alert(numberb + ' số thử Hai là số lớn nhất')
+    } else {
+        alert(numberc + ' số thử BA là số lớn nhất')
+    }
+
+    let diemmot = parseInt(prompt('nhập điểm giữa kì', ''));
+    let diemmo2 = parseInt(prompt('nhập điểm cuối kì', ''));
+    let diemtb = (diemmot + diemmo2) / 2;
+    if (diemtb < '5'){
+        alert(diemtb + ' yếu')
+    }else if (diemtb <= '8'){
+        alert(diemtb + ' Khá')
+    }else {
+        alert(diemtb + ' giỏi')
+    }
+</script>
+</body>
+</html>
